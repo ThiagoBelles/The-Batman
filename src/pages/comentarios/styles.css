@@ -1,0 +1,245 @@
+.main {
+    position: relative;
+}
+
+.main-containers {
+    position: sticky;
+    top: 10px;
+    width: 100%;
+    height: 105vh;
+    background-image: url("https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/2318/e4e1f71688e6f104ceff7900976febe4.jpg");
+    background-position: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+    /* border: 1px solid white; */
+}
+
+.coments-background {
+    width: 100%;
+    height: 100%;
+}
+
+.coments-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 50%;
+    height: 99.54%;
+    row-gap: 150px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* border: 2px solid white; */
+}
+
+.coment-cards {
+    display: block;
+    height: fit-content;
+    width: 500px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.295);
+    /* border: 1px solid yellow; */
+}
+
+.perfi-box {
+    display: flex;
+    flex-direction: row;
+    height: 94px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-left: 24px;
+    padding-top: 5px;
+    /* border: 1px solid yellow; */
+}
+
+.stars-box{
+    height: 35px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    /* border: 3px solid rgb(255, 0, 140); */
+}
+
+.foto-perfil {
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+}
+
+.foto {
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    /* border: 1px solid rgba(237, 237, 237, 0.463); */
+}
+
+.nome-box {
+    height: 90%;
+    width: 70%;
+    margin-left: 50px;
+    background-color: transparent;
+    padding: 13px;
+    color: black;
+    font-weight: 600;
+    /* border: 1px solid rgb(93, 0, 255); */
+}
+
+.nome {
+    background-color: inherit;
+    font-size: 22px;
+}
+
+.envio {
+    background-color: inherit;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.nota {
+    display: flex;
+    position: relative;
+    top: 1px;
+    background-color: transparent;
+    font-size: 24px;
+    margin-left: 45px;
+    color: black;
+    font-weight: 400;
+}
+
+.star-line {
+    display: flex;
+    column-gap: 2px;
+    align-items: center;
+    height: 70%;
+    width: 40%;
+    background-color: transparent;
+}
+
+.stars {
+    height: 100%;
+    width: auto;
+    background-color: transparent;
+}
+
+.coment-box{
+    display: flex;
+    height: 58%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 15px;
+}
+
+.coment {
+    background-color: transparent;
+    text-align:justify;
+    color: black;
+    font-weight: 400;
+}
+
+@media (max-width: 1240px){
+    .main-containers {
+        background-position: 30%;
+    }
+
+    .coments-container {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate( 0%, -50%);
+    }
+
+}
+
+@media (max-width: 730px){
+    .main-containers {
+        background-position: 50%;
+    }
+
+    .coments-container {
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coment-cards {
+        justify-self: center;
+    }
+
+}
+
+@media (max-width: 570px){
+    .coment-cards {
+        width: 90%;
+    }
+
+    .perfi-box {
+        padding-left: 15px;
+    }
+    
+    .foto-perfil {
+        height: 75px;
+        width: 75px;
+        margin-top: 3px;
+    }
+    
+    .foto {
+        height: 75px;
+        width: 75px;
+    }
+    
+    .nome-box {
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 2px;
+        width: fit-content;
+    }
+    
+    .nome {
+        font-size: 19px;
+    }
+    
+    .envio {
+        font-size: 14px;
+    }
+
+    .nota {
+        margin-left: 35px;
+        font-size: 22px;
+    }
+
+    .star-line {
+        height: 65%;
+    }
+}
+
+@media (max-width: 415px){
+    .nota {
+        font-size: 20px;
+    }
+
+    .envio {
+        font-size: 12px;
+    }
+
+    .coment {
+      font-size: 14px;
+    }
+
+}

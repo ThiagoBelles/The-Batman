@@ -1,0 +1,92 @@
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 1px solid rgb(17, 0, 255) */
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+
+    /* border: 1px solid rgb(191, 255, 0) */
+
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+       
+    /* border: 1px solid rgb(136, 0, 255) */
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://hollywoodforevertv.com.br/media/uploads/robert-pattinson-revela-perrengues-vividos-com-o-complexo-figurino-de-batman.jpg');
+    background-position: 60% 50%;
+   }
+
+.banner-2 {
+background-image: url('https://pbs.twimg.com/media/FMOk4EiXEAURgip.jpg');
+background-position: 40% 0%;
+}
+
+.banner-3 {
+    background-image: url('https://preview.redd.it/opinions-on-jeffrey-wrights-gordon-v0-l617izc155sb1.png?auto=webp&s=d86970095d58cf4443cf974ced11c68dd31e93bf');
+    background-position: 80% 40%;
+
+}
+
+@media (max-width: 1020px){
+    .cards-content {
+        width: 98%;    
+    }
+}
+
+@media (max-width: 930px){
+    .cards-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 411px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 550px){
+    .card {
+        width: 80%;
+        height: 600px;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 420px){
+    .card {
+        width: 94%;
+    }
+}

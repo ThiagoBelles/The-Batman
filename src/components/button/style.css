@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(246, 145, 22);
+    color: brown;
+    font-size: 22px;
+    margin: 30px;
+
+}
+
+.disabledButton {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(246, 37, 22);
+    color: rgb(55, 27, 27);
+    font-size: 22px;
+    margin: 30px;
+}
+
+span {
+    display: block;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
