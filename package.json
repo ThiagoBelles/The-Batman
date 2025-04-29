@@ -1,5 +1,5 @@
-{ "homepage": "The-Batman/",
-  "name": "primeiraapp",
+{ "homepage": "https://thiagobelles.github.io/The-Batman/",
+  "name": "the-batman",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
